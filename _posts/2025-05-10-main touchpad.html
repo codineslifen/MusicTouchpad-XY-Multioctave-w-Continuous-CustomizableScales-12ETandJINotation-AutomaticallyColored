@@ -1,13 +1,13 @@
 ---
-date: 2025-05-04
-title: "index"
+date: 2025-05-10
+title: Main Touchpad
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>index</title>
+  <title>MusicTouchpad-XY-Multioctave-w-Continuous-or-CustomizableScales-w-SemitonalNotation-n-AutomaticallyColored</title>
   <style>
     html, body {
       margin: 0;
@@ -34,7 +34,7 @@ title: "index"
 
     #scaleButtonContainer {
       position: absolute;
-      top: 10px;
+      bottom: 10px;
       left: 40px;
       z-index: 10;
     }
@@ -65,6 +65,8 @@ title: "index"
       flex: none;
       height: 120px;
       display: flex;
+      border-top: solid 1px;
+      border-bottom: solid 1px;
     }
 
     .note-zone {
@@ -93,15 +95,8 @@ title: "index"
 
   <div id="scaleButtonContainer">
     <select id="scaleSelect" title="Select a Scale">
-      <option value="minor">Natural Minor</option>
-      <option value="major">Major</option>
-      <option value="pentatonic">Pentatonic Major</option>
+      <option value="ionian">Major/Ionian</option>
       <option value="blues">Blues Minor</option>
-      <option value="kurd">Kurdi/Phrygian</option>
-      <option value="bayatinawand">Bayati Nahawand</option>
-      <option value="hijazkarkurd">Hijazkar Kurdi</option>
-      <option value="bayati">Bayati</option>
-      <option value="hijaz">Hijaz</option>
       <option value="continuous">Continuous</option>
     </select>
   </div>
@@ -110,15 +105,8 @@ title: "index"
 
   <script>
     const scalePresets = {
-      minor: [0, 2, 3, 5, 7, 8, 10],
-      major: [0, 2, 4, 5, 7, 9, 11],
-      pentatonic: [0, 2, 4, 7, 9],
-      blues: [0, 3, 5, 6, 7, 10],
-      kurd: [0, 1, 3, 5, 7, 8, 10],
-      bayatinawand: [0, 1.5, 3, 5, 7, 8, 10],
-      hijazkarkurd: [0, 1, 3, 4, 5, 7, 8, 10, 11],
-      bayati: [0, 1.5, 3, 5, 7, 8, 10],
-      hijaz: [0, 1, 4, 5, 7, 8.5, 10]
+      ionian: [0, 2, 4, 5, 7, 9, 11],
+      blues: [0, 3, 5, 6, 7, 10]
     };
 
     const baseFreq = 261.63; // C4
@@ -185,7 +173,7 @@ title: "index"
       const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
       const osc = audioCtx.createOscillator();
       const gain = audioCtx.createGain();
-      osc.type = 'square';
+      osc.type = 'triangle';
       osc.connect(gain);
       gain.connect(audioCtx.destination);
       gain.gain.value = 0;
@@ -225,7 +213,7 @@ title: "index"
       renderPad(scaleSelect.value);
     });
 
-    renderPad('minor');
+    renderPad('ionian');
   </script>
 </body>
 </html>
