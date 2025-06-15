@@ -1,8 +1,46 @@
+> - SFMBE.
+
+*The code is created by ChatGPT. (I don't understand coding yet, esp. JavaScript.)*
+
 Just for fun playing.
 
-The pages:
+Try them:
 1. [Basic](https://codineslifen.github.io/MusicTouchpad-XY-Multioctave-w-Continuous-CustomizableScales-12ETandJINotation-AutomaticallyColored/2025/05/10/basic.html)
 2. [Advanced Audio Logic 12ET Notation](https://codineslifen.github.io/MusicTouchpad-XY-Multioctave-w-Continuous-CustomizableScales-12ETandJINotation-AutomaticallyColored/2025/06/15/advancedaudio12et.html)
 3. [Advanced Audio Logic JI Notation](https://codineslifen.github.io/MusicTouchpad-XY-Multioctave-w-Continuous-CustomizableScales-12ETandJINotation-AutomaticallyColored/2025/06/15/advancedaudiojust.html)
 
 The codes are in the _posts folder.
+
+## Featured:
+1. **XY dimensionality: X for pitch, Y for the volume**
+2. **Multioctave**
+They can be configured here:
+```js
+const numOctaves = {value}; // number of octaves, e.g. 4
+const baseOctave = {value}; // based on 'baseFreq'. e.g. -2
+```
+3. **Scale options: configurable defined scales or linear continuous pad**
+To add or configure scales, look at
+```html
+<div id="scaleButtonContainer">
+    <select id="scaleSelect" title="Select a Scale">
+```
+(in `<body>` element) and
+```js
+const scalePresets = {
+```
+(in `<script>` element), and just understand the patterns. the `[]` arrays must be ended with commas except the last.
+
+4. **Automatic coloring and decimal 12ET/JI notation labeling**
+Tones are colored automatically based on their values.
+
+5. **Adjustable rows height**
+Need more space for X/volume controll? Just edit the value of `height:` in `.octave-row {}` in `<style>`**,** and `rowHeight =` in `<script>`.
+> [!NOTE] Important!
+> Ensure that the values of both are the same or the visual and the actual pad won't be aligned.
+
+6. **Customizable audio generator**
+Unfortunately I mysolf don't really understand how to do it, so just figure out yourself.
+
+## Notes
+1. Sometimes the visual and the actual pad aren't aligned, try to refresh the page if this happens.
