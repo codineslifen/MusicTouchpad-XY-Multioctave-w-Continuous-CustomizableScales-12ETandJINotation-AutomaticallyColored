@@ -31,7 +31,7 @@ To add or configure scales, look at
 ```js
 const scalePresets = {
 ```
-(in `<script>` element), and just understand the patterns. the `[]` arrays must be ended with commas except the last.
+(in `<script>` element), and just understand the patterns. Every array must be ended with a comma except the last.
 
 4. **Automatic coloring and decimal 12ET/JI notation labeling**
 
