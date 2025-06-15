@@ -14,12 +14,14 @@ The codes are in the _posts folder.
 ## Featured:
 1. **XY dimensionality: X for pitch, Y for the volume**
 2. **Multioctave**
+
 They can be configured here:
 ```js
 const numOctaves = {value}; // number of octaves, e.g. 4
 const baseOctave = {value}; // based on 'baseFreq'. e.g. -2
 ```
 3. **Scale options: configurable defined scales or linear continuous pad**
+
 To add or configure scales, look at
 ```html
 <div id="scaleButtonContainer">
@@ -32,9 +34,11 @@ const scalePresets = {
 (in `<script>` element), and just understand the patterns. the `[]` arrays must be ended with commas except the last.
 
 4. **Automatic coloring and decimal 12ET/JI notation labeling**
+
 Tones are colored automatically based on their values.
 
-5. **Adjustable rows height**
+6. **Adjustable rows height**
+
 Need more space for X/volume controll? Just edit the value of `height:` in `.octave-row {}` in `<style>`**,** and `rowHeight =` in `<script>`.
 > [!NOTE] Important!
 > Ensure that the values of both are the same or the visual and the actual pad won't be aligned.
