@@ -24,14 +24,41 @@ const baseOctave = {value}; // based on 'baseFreq'. e.g. -2
 
 To add or configure scales, look at
 ```html
-<div id="scaleButtonContainer">
-    <select id="scaleSelect" title="Select a Scale">
+  <div id="scaleButtonContainer">
+    <select id="scaleSelect">
 ```
 (in `<body>` element) and
 ```js
 const scalePresets = {
 ```
-(in `<script>` element), and just understand the patterns. Every array must be ended with a comma except the last.
+(in `<script>` element), and just understand the patterns. Every `[]` must be ended with a comma except the last.
+
+Example:
+Example:
+```html
+  <div id="scaleButtonContainer">
+    <select id="scaleSelect">
+      <option value="blues">Blues</option>
+      <option value="tizitaminor">Tizita Minor</option>
+      <option value="rast">Rast</option>
+      <option value="iwato">Iwato</option>
+      <option value="degung">Degung</option>
+      <option value="continuous">Continuous</option>
+    </select>
+  </div>
+```
+in `body` element, and
+```js
+  <script>
+    const scalePresets = {
+      blues: [0, 3, 5, 6, 7, 10],
+      tizitaminor: [0, 2.04, 3.16, 7.02, 8.14],
+      rast: [0, 2, 3.5, 5, 7, 9, 10.5],
+      iwato: [0, 1, 5, 6, 10],
+      degung: [0, 4, 4.8, 7.2, 11.2]
+    };
+```
+in `script` element.
 
 4. **Automatic coloring and decimal 12ET/JI notation labeling**
 
