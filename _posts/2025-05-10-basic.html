@@ -95,7 +95,7 @@ title: Basic
 
   <div id="scaleButtonContainer">
     <select id="scaleSelect" title="Select a Scale">
-      <option value="ionian">Major/Ionian</option>
+      <option value="major">Major</option>
       <option value="blues">Blues Minor</option>
       <option value="continuous">Continuous</option>
     </select>
@@ -105,7 +105,7 @@ title: Basic
 
   <script>
     const scalePresets = {
-      ionian: [0, 2, 4, 5, 7, 9, 11],
+      major: [0, 2, 4, 5, 7, 9, 11],
       blues: [0, 3, 5, 6, 7, 10]
     };
 
@@ -213,7 +213,7 @@ title: Basic
       renderPad(scaleSelect.value);
     });
 
-    renderPad('ionian');
+    renderPad('major');
   </script>
 </body>
 </html>
