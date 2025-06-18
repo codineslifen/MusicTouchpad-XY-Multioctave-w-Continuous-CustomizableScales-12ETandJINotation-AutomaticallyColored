@@ -43,7 +43,7 @@ title: advancedaudiojust
   <div id="scrollbarZone"></div>
   <div id="scaleButtonContainer">
     <select id="scaleSelect">
-      <option value="ionian">Major/Ionian</option>
+      <option value="major">Major</option>
       <option value="continuous">Continuous</option>
     </select>
   </div>
@@ -52,7 +52,7 @@ title: advancedaudiojust
 
   <script>
     const scalePresets = {
-      ionian: [1/1, 9/8, 5/4, 4/3, 3/2, 5/3, 15/8]
+      major: [1/1, 9/8, 5/4, 4/3, 3/2, 5/3, 15/8]
     };
 
     const baseFreq = 261.63;
@@ -235,7 +235,7 @@ title: advancedaudiojust
       renderPad(scaleSelect.value);
     });
 
-    renderPad('ionian');
+    renderPad('major');
   </script>
 </body>
 </html>
