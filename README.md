@@ -34,7 +34,6 @@ const scalePresets = {
 (in `<script>` element), and just understand the patterns. Every `[]` must be ended with a comma except the last.
 
 Example:
-Example:
 ```html
   <div id="scaleButtonContainer">
     <select id="scaleSelect">
