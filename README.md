@@ -1,6 +1,6 @@
 > - SFMBE.
 
-*The code is created by ChatGPT. (I don't understand coding yet, esp. JavaScript.)*
+*The codes were created by ChatGPT. (I don't understand coding yet, esp. JavaScript.)*
 
 Just for fun playing.
 
