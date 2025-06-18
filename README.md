@@ -9,7 +9,7 @@ Try them:
 2. [Advanced Audio Logic 12ET Notation](https://codineslifen.github.io/MusicTouchpad-XY-Multioctave-w-Continuous-CustomizableScales-12ETandJINotation-AutomaticallyColored/2025/06/15/advancedaudio12et.html)
 3. [Advanced Audio Logic JI Notation](https://codineslifen.github.io/MusicTouchpad-XY-Multioctave-w-Continuous-CustomizableScales-12ETandJINotation-AutomaticallyColored/2025/06/15/advancedaudiojust.html)
 
-The codes are in the _posts folder.
+The codes are in the `_posts` folder.
 
 ## Featured:
 1. **XY dimensionality: X for pitch, Y for the volume**
