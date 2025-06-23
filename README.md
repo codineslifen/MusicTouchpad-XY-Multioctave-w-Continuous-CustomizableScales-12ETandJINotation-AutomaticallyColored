@@ -53,7 +53,7 @@ in `body` element, and
       tizitaminor: [0, 2.04, 3.16, 7.02, 8.14],
       rast: [0, 2, 3.5, 5, 7, 9, 10.5],
       iwato: [0, 1, 5, 6, 10],
-      degung: [0, 4, 4.8, 7.2, 11.2]
+      degung: [0, 3.863, 4.98, 7.02, 10.883]
     };
 ```
 in `script` element.
